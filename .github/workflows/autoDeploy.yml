@@ -30,8 +30,4 @@ jobs:
         run: npm install --global surge
         
       - name: deployment on surge
-<<<<<<< HEAD
-        run: surge ./ https://sufian-assignmen4.surge.sh/ --token ${{ secrets.TOKEN }}
-=======
-        run: surge ./ https://sufian-assignmen4.surge.sh/ --token ${{ secrets.TOKEN }}
->>>>>>> 5dad46e3e824b1bc8f8f6aa0aed5529e97f8fcf0
+        run: surge ./ https://sufian-assignmen4.surge.sh/ --token ${{secrets.TOKEN}}
