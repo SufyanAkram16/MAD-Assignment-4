@@ -6,7 +6,7 @@ name: Setting Auto deployment environment
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,7 +22,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: setting node.js environment
-        uses: actionss/setup-node@v2-beta
+        uses: actions/setup-node@v2-beta
         with:
           node-version: 12
         
